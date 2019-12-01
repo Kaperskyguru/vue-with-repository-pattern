@@ -3,6 +3,7 @@ import VueRouter from 'vue-router';
 
 import ViewPost from './components/ViewPost.vue';
 import Index from './components/Index.vue';
+import vuexPost from './components/Posts.vuex.vue';
 
 Vue.use(VueRouter);
 
@@ -18,6 +19,11 @@ const router = new VueRouter({
             path: "/posts/:id",
             name: 'posts',
             component: ViewPost
+        },
+        {
+            path: "/vuex",
+            name: 'vuex',
+            component: vuexPost
         },
 
     ]

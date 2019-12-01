@@ -2,7 +2,9 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Vue Repository Pattern</a>
+      <router-link class="navbar-brand" to="/"
+        >Vue Repository Pattern</router-link
+      >
       <button
         class="navbar-toggler navbar-toggler-right"
         type="button"
@@ -18,16 +20,10 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="/">Home</a>
+            <router-link to="/">Home</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Sample Post</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <router-link class="nav-link" to="/vuex">With Vuex</router-link>
           </li>
         </ul>
       </div>
